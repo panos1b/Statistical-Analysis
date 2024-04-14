@@ -89,6 +89,11 @@ class Program {
 
 		if (modeFlag) //Mode calculations are done by going through the repository from start to finnish and from finish to start and counting equallities
 		{
+			if (!medianFlag) // Dont resort if its already sorted earlier
+			{
+				ints.Sort();
+			}
+
 			int maxCount = 0;
 
 			for (int i = 0; i < ints.Count; i++)
