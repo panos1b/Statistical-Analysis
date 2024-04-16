@@ -2,6 +2,7 @@
 ## Description
 This repository contains the second lab project for the SEIP module. This basic program will produce statistical metrics for a set of integers.
 ## Usage
+#### First Usage:
 - First you must clone the project. Navigate to a folder of your choice then run
 `git clone https://github.com/panos1b/SEIP-lab`
 - Then enter to the project foler
@@ -12,6 +13,9 @@ This repository contains the second lab project for the SEIP module. This basic 
 - Finnaly you can run the programm as follows
 `docker run stats_analysis --help`
     - This will bring up the help. Replace `--help` with your arguments and values
+#### Every susequent use:
+- Directly run the program via docker image whilst in the correct folder \
+`docker run stats_analysis [--min] [--max] [--mode] [--mean] [--median] [integer1 integer2 ...]`
 ## Examples
 #### Using a singular argument
 ~~~
@@ -40,7 +44,7 @@ ___
 #### Mixing things up is okay!
 `docker run stats_analysis --mode 5 --median 6 --max 4 6 --min` \
 `docker run stats_analysis --mode --median --max --min 5 6 4 6`
-* Both will output:
+* **Both** will output:
 ~~~
 > The minimum is: 4
 > The maximum is: 6
