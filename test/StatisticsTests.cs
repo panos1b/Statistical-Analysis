@@ -68,5 +68,23 @@ namespace DotNet.Docker.test
 			double median = Statistics.GetMedian(expected_return);
 			Assert.That(median == 6);
 		}
+
+		[Test]
+		public void GetMode_Test()
+		{
+			List<int> expected_return = new List<int>();
+			expected_return.Add(1);
+			expected_return.Add(5);
+			expected_return.Add(7);
+			expected_return.Add(45);
+			expected_return.Add(8);
+			expected_return.Add(4);
+			expected_return.Add(6);
+			expected_return.Add(3);
+			expected_return.Add(2);
+
+			double mode = Statistics.GetMode(expected_return);
+			Assert.That(mode == 1);
+		}
 	}
 }
