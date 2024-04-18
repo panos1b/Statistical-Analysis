@@ -105,7 +105,7 @@ namespace DotNet.Docker.scr
 			return mode;
 		}
 	}
-}
+
 
 [Serializable]
 public class IllegalArgumentExeption : Exception
@@ -113,4 +113,6 @@ public class IllegalArgumentExeption : Exception
 	public IllegalArgumentExeption() : base() { }
 	public IllegalArgumentExeption(string message) : base(message) { }
 	public IllegalArgumentExeption(string message, Exception inner) : base(message, inner) { }
+}
+
 }
