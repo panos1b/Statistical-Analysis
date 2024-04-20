@@ -11,7 +11,7 @@ namespace DotNet.Docker.scr
 		public static void PrintHelp() 
 		{
 			Console.WriteLine("This programm performs statistical analysis for a set of integers");
-			Console.WriteLine("usage: Program [--min] [--max] [--mode] [--mean] [--median] [integer1 integer2 ...]");
+			Console.WriteLine("usage: Program [--min] [--max] [--mode] [--mean] [--median] [--individual] [integer1 integer2 ...]");
 			return;
 		}
 	}
