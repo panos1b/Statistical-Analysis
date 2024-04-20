@@ -28,7 +28,7 @@ namespace DotNet.Docker.scr
 		public static  Dictionary<String, bool> GetOperations(String[] arguments) 
 		{
 			Dictionary<String, bool> operations = [];
-			operations["min"] = false; operations["max"] = false; operations["mode"] = false; operations["mean"] = false; operations["median"]= false;
+			operations["min"] = false; operations["max"] = false; operations["mode"] = false; operations["mean"] = false; operations["median"] = false; operations["individual"] = false;
 			foreach (string arg in arguments)
 			{
 				try
@@ -54,6 +54,9 @@ namespace DotNet.Docker.scr
 							break;
 						case "--median":
 							operations["median"] = true;
+							break;
+						case "--individual":
+							operations["individual"] = true;
 							break;
 						default:
 							// This means they gave neither a flag neither an integer
@@ -103,6 +106,12 @@ namespace DotNet.Docker.scr
 				}
 			}
 			return mode;
+		}
+
+		public static List<int> KeepUniqueValues(List<int> ints)
+		{
+			List<int> unique = ints.Distinct().ToList();
+			return unique;
 		}
 	}
 

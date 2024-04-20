@@ -29,9 +29,14 @@ class Program {
 		{ 
 			Console.WriteLine(ex.Message);
 			return;
-		} 
-		
+		}
+
 		// Depending on which flags are active we do the required computations
+		if (operations["individual"]) 
+		{
+			ints = Statistics.KeepUniqueValues(ints);
+		}
+
 		if (operations["min"]) 
 		{
 			Console.WriteLine($"The minimum is: {ints.Min()} ");
