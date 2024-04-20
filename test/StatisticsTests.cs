@@ -86,5 +86,30 @@ namespace DotNet.Docker.test
 			double mode = Statistics.GetMode(expected_return);
 			Assert.That(mode == 1);
 		}
+
+		[Test]
+		public void KeepUniqueValues_Test()
+		{
+			List<int> expected_return = new List<int>();
+			expected_return.Add(1);
+			expected_return.Add(5);
+			expected_return.Add(7);
+			expected_return.Add(45);
+
+
+			List<int> passed_values = new List<int>();
+			passed_values.Add(1);
+			passed_values.Add(5);
+			passed_values.Add(7);
+			passed_values.Add(45);
+			passed_values.Add(7);
+			passed_values.Add(7);
+			passed_values.Add(45);
+			passed_values.Add(5);
+			passed_values.Add(1);
+
+			List<int> actual_return = Statistics.KeepUniqueValues(passed_values);
+			Assert.That(expected_return.SequenceEqual(actual_return));
+		}
 	}
 }
