@@ -15,7 +15,7 @@ This repository contains the second lab project for the SEIP module. This basic 
     - This will bring up the help. Replace `--help` with your arguments and values
 #### Every susequent use:
 - Directly run the program via docker image whilst in the correct folder \
-`docker run stats_analysis [--min] [--max] [--mode] [--mean] [--median] [integer1 integer2 ...]`
+`docker run stats_analysis [--min] [--max] [--mode] [--mean] [--median] [--individual] [integer1 integer2 ...]`
 ## Examples
 #### Using a singular argument
 ~~~
@@ -50,6 +50,14 @@ ___
 > The maximum is: 6
 > The median is: 5.5
 > The mode is: 6
+~~~
+___
+#### Individual ignores duplicate values
+`docker run stats_analysis --mode --individual 4 5 6 7` \
+`docker run stats_analysis --mode --individual 4 5 6 7 7 7 7 7`
+* **Both** will output:
+~~~
+> The mode is: 4
 ~~~
 
 ## Licence
