@@ -110,7 +110,7 @@ namespace DotNet.Docker.scr
 
 		public static List<int> KeepUniqueValues(List<int> ints)
 		{
-			List<int> unique = ints.Distinct().ToList();
+			List<int> unique = ints.Distinct().ToList(); //CRUD deleting
 			return unique;
 		}
 	}

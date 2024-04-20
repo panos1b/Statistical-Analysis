@@ -18,12 +18,12 @@ class Program {
 		}
 
 		//We now start reading arguments. We will accept them in random possitions and mixed to make the programm more vercetile
-		List<int> ints = Statistics.GetInts(args);
-		Dictionary<String, bool> operations = [];
+		List<int> ints = Statistics.GetInts(args); //CRUD creation
+		Dictionary<String, bool> operations = []; //CRUD creation
 
 		try
 		{
-			operations = Statistics.GetOperations(args);
+			operations = Statistics.GetOperations(args); //CRUD updating
 		} 
 		catch(IllegalArgumentExeption ex) 
 		{ 
@@ -34,22 +34,22 @@ class Program {
 		// Depending on which flags are active we do the required computations
 		if (operations["individual"]) 
 		{
-			ints = Statistics.KeepUniqueValues(ints);
+			ints = Statistics.KeepUniqueValues(ints); //CRUD deleting
 		}
 
 		if (operations["min"]) 
 		{
-			Console.WriteLine($"The minimum is: {ints.Min()} ");
+			Console.WriteLine($"The minimum is: {ints.Min()} "); //CRUD reading
 		}
 
 		if (operations["max"]) 
 		{
-			Console.WriteLine($"The maximum is: {ints.Max()} ");
+			Console.WriteLine($"The maximum is: {ints.Max()} "); //CRUD reading
 		}
 
 		if (operations["mean"])
 		{
-			Console.WriteLine($"The mean is: {ints.Average()}");
+			Console.WriteLine($"The mean is: {ints.Average()}"); //CRUD reading
 		}
 
 		if (operations["median"])
