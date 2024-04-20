@@ -13,7 +13,21 @@ class Program {
 		// This will display the help for the repository
 		if ("-h".Equals(args[0]) || "--help".Equals(args[0]))
 		{
-			Help.PrintHelp();
+			try
+			{
+				if (args.Length < 2)
+				{
+					Help.PrintHelp();
+				}
+				else
+				{
+					Help.PrintHelp(args[1]);
+				}
+			}
+			catch (IllegalArgumentExeption ex) 
+			{ 
+				Console.WriteLine(ex.Message);
+			}
 			return;
 		}
 
