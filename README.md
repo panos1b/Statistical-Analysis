@@ -1,3 +1,5 @@
+[![SEIP-lab .NET](https://github.com/panos1b/SEIP-lab/actions/workflows/dotnet.yml/badge.svg)](https://github.com/panos1b/SEIP-lab/actions/workflows/dotnet.yml)
+[![SEIP-lab Docker Image CI](https://github.com/panos1b/SEIP-lab/actions/workflows/docker-image.yml/badge.svg)](https://github.com/panos1b/SEIP-lab/actions/workflows/docker-image.yml)
 # SEIP-lab
 ## Description
 This repository contains the second lab project for the SEIP module. This basic program will produce statistical metrics for a set of integers.
