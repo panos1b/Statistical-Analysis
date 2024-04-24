@@ -7,15 +7,15 @@ This repository contains the second lab project for the SEIP module. This basic 
 #### First Usage:
 - First you must clone the project. Navigate to a folder of your choice then run
 `git clone https://github.com/panos1b/SEIP-lab`
-- Then enter to the project foler
+- Then enter to the project folder
 `cd SEIP-lab`
 - Now you must build the docker image
 `docker build -t stats_analysis .`
-    - Dont forget the period at the end
-- Finnaly you can run the programm as follows
+    - Don’t forget the period at the end
+- Finally, you can run the program as follows
 `docker run stats_analysis --help`
     - This will bring up the help. Replace `--help` with your arguments and values
-#### Every susequent use:
+#### Every subsequent use:
 - Directly run the program via docker image whilst in the correct folder \
 `docker run stats_analysis [--min] [--max] [--mode] [--mean] [--median] [--individual] [integer1 integer2 ...]`
 ## Examples
@@ -62,6 +62,6 @@ ___
 > The mode is: 4
 ~~~
 
-## Licence
+## License
 Licensed under the EUPL \
-Take a look at the licence file [EN](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EN.txt) and [EL](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EL.txt)
+Take a look at the license file [EN](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EN.txt) and [EL](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EL.txt)
