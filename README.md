@@ -65,3 +65,6 @@ ___
 ## License
 Licensed under the EUPL \
 Take a look at the license file [EN](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EN.txt) and [EL](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EL.txt)
+
+## Security
+This is my public key fingerprint:89A8AD5204D4B7B364F29885A8ED408CB3A9A29D
