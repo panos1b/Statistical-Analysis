@@ -15,6 +15,6 @@ Some fuzzed inputs that failed and match such criteria are:
 - `^Wtv >j^|  OA^FVf^O^r   ffffff^Wtv >j^|  Otttttttttt >j^k hhh^Okllllq _j^|  OA^FVf ^r^r   {L^l tvq`
 - `^Wtv >fff^O^r  1{L^l  ^W^W^WVf^O^rlllllq`
 
-But experimenting with the binary we find that the previous input `ffl ^et^d^}^f` does not in fact crash this binary. This makes me believe that the only difference between the source code of the two exercises is the fact that the flight crew needed to fly the bigger aircraft is four instead of two. This is consistent with our fizzers results (as at least four `f` appear before the operations) and our own testing.
+But experimenting with the binary we find that the previous input `ffl ^et^d^}^f` does not in fact crash this binary. This makes me believe that the only difference between the source code of the two exercises is the fact that the flight crew needed to fly the bigger aircraft is four instead of two. This is consistent with our fuzzers results (as at least four `f` appear before the operations) and our own testing.
 
 _Note: QEMU mode was used to fuzz the binary only target_
