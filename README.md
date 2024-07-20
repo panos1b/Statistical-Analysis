@@ -1,14 +1,14 @@
-[![SEIP-lab .NET](https://github.com/panos1b/SEIP-lab/actions/workflows/dotnet.yml/badge.svg)](https://github.com/panos1b/SEIP-lab/actions/workflows/dotnet.yml)
-[![SEIP-lab Docker Image CI](https://github.com/panos1b/SEIP-lab/actions/workflows/docker-image.yml/badge.svg)](https://github.com/panos1b/SEIP-lab/actions/workflows/docker-image.yml)
-# SEIP-lab
+[![Statistical-Analysis .NET](https://github.com/panos1b/Statistical-Analysis/actions/workflows/dotnet.yml/badge.svg)](https://github.com/panos1b/Statistical-Analysis/actions/workflows/dotnet.yml)
+[![Statistical-Analysis Docker Image CI](https://github.com/panos1b/Statistical-Analysis/actions/workflows/docker-image.yml/badge.svg)](https://github.com/panos1b/Statistical-Analysis/actions/workflows/docker-image.yml)
+# Statistical Analysis
 ## Description
-This repository contains the second lab project for the SEIP module. This basic program will produce statistical metrics for a set of integers.
+This repository contains a CLI program which can output basic statistical measures for a set of values
 ## Usage
 #### First Usage:
 - First you must clone the project. Navigate to a folder of your choice then run
-`git clone https://github.com/panos1b/SEIP-lab`
+`git clone https://github.com/panos1b/Statistical-Analysis`
 - Then enter to the project folder
-`cd SEIP-lab`
+`cd Statistical-Analysis`
 - Now you must build the docker image
 `docker build -t stats_analysis .`
     - Don’t forget the period at the end
@@ -64,4 +64,4 @@ ___
 
 ## License
 Licensed under the EUPL \
-Take a look at the license file [EN](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EN.txt) and [EL](https://github.com/panos1b/SEIP-lab/blob/development/LICENCE_EL.txt)
+Take a look at the license file [EN](https://github.com/panos1b/Statistical-Analysis/blob/development/LICENCE_EN.txt) and [EL](https://github.com/panos1b/Statistical-Analysis/blob/development/LICENCE_EL.txt)
