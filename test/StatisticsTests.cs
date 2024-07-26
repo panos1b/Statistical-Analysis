@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using NUnit.Framework.Internal;
-using DotNet.Docker.scr;
+using DotNet.Docker.src;
 
 namespace DotNet.Docker.test
 {
